@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Notes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h1>📚 StudyMate <span>AI</span></h1>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="upload.html">📄 Upload Notes</a>
+
+            <a class="active" href="notes.html">
+                📚 My Notes
+            </a>
+
+            <a href="flashcards.html">🃏 Flashcards</a>
+
+            <a href="quiz.html">✅ Quiz</a>
+
+            <a href="study-plan.html">📅 Study Plan</a>
+
+            <a href="offline.html">📱 Offline Mode</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <a href="index.html">← Back to Home</a>
+
+        <h2>📚 My Notes</h2>
+
+        <div class="note-list">
+
+            <div class="note-card">
+
+                <h3>☁️ Cloud Computing</h3>
+
+                <p>
+                    Cloud Computing notes uploaded today.
+                </p>
+
+                <button onclick="askAI('Cloud Computing')">
+                    🤖 Ask AI
+                </button>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>💾 DBMS</h3>
+
+                <p>
+                    Database Management System notes.
+                </p>
+
+                <button onclick="askAI('DBMS')">
+                    🤖 Ask AI
+                </button>
+
+            </div>
+
+
+            <div class="note-card">
+
+                <h3>🐍 Python</h3>
+
+                <p>
+                    Python programming basics.
+                </p>
+
+                <button onclick="askAI('Python')">
+                    🤖 Ask AI
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="ai-box">
+
+            <h2>🤖 Ask AI</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask something about your notes..."
+            ></textarea>
+
+            <button onclick="answerQuestion()">
+                Ask Question
+            </button>
+
+            <div id="answer"></div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="notes.js"></script>
+</body>
+</html>

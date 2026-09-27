@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Offline Mode</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h1>📚 StudyMate <span>AI</span></h1>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="upload.html">📄 Upload Notes</a>
+
+            <a href="notes.html">📚 My Notes</a>
+
+            <a href="flashcards.html">🃏 Flashcards</a>
+
+            <a href="quiz.html">✅ Quiz</a>
+
+            <a href="study-plan.html">📅 Study Plan</a>
+
+            <a class="active" href="offline.html">
+                📱 Offline Mode
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <a href="index.html">← Back to Home</a>
+
+        <h2>📱 Offline Study Mode</h2>
+
+        <div class="offline-box">
+
+            <div class="big-icon">📶❌</div>
+
+            <h2>No Internet? No Problem!</h2>
+
+            <p>
+                You can access your saved notes,
+                flashcards, quizzes and study plans
+                without internet.
+            </p>
+
+            <button onclick="enableOffline()">
+                Enable Offline Mode
+            </button>
+
+            <p id="offlineStatus"></p>
+
+        </div>
+
+    </main>
+
+</div>
+<script src="offline.js"></script>
+</body>
+</html>

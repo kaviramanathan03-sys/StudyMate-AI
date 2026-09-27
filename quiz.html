@@ -1,0 +1,109 @@
+.<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h1>📚 StudyMate <span>AI</span></h1>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="upload.html">📄 Upload Notes</a>
+
+            <a href="notes.html">📚 My Notes</a>
+
+            <a href="flashcards.html">🃏 Flashcards</a>
+
+            <a class="active" href="quiz.html">
+                ✅ Quiz
+            </a>
+
+            <a href="study-plan.html">📅 Study Plan</a>
+
+            <a href="offline.html">📱 Offline Mode</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <a href="index.html">← Back to Home</a>
+
+        <h2>✅ Practice Quiz</h2>
+
+        <div class="quiz-box">
+
+            <p>Question 1 of 5</p>
+
+            <h2>
+                Which language is used for web page structure?
+            </h2>
+
+            <label>
+                <input type="radio" name="answer">
+                Python
+            </label>
+
+            <label>
+                <input type="radio" name="answer">
+                HTML
+            </label>
+
+            <label>
+                <input type="radio" name="answer">
+                Java
+            </label>
+
+            <label>
+                <input type="radio" name="answer">
+                C++
+            </label>
+
+            <button onclick="checkQuiz()">
+                Submit Answer
+            </button>
+
+            <p id="quizResult"></p>
+
+        </div>
+
+    </main>
+
+</div>
+<div id="quiz">
+
+    <p id="progress"></p>
+
+    <h2 id="question">
+        Question
+    </h2>
+
+    <div id="options"></div>
+
+</div>
+
+<script src="quiz.js"></script>
+
+
+</body>
+</html>

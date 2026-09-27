@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Notes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h1>📚 StudyMate <span>AI</span></h1>
+
+        <p>Your Smart Study Assistant</p>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a class="active" href="upload.html">
+                📄 Upload Notes
+            </a>
+
+            <a href="notes.html">📚 My Notes</a>
+
+            <a href="flashcards.html">🃏 Flashcards</a>
+
+            <a href="quiz.html">✅ Quiz</a>
+
+            <a href="study-plan.html">📅 Study Plan</a>
+
+            <a href="offline.html">📱 Offline Mode</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <a href="index.html">← Back to Home</a>
+
+        <div class="page-title">
+
+            <h2>📄 Upload Your Notes</h2>
+
+            <p>
+                Upload your study material to start learning.
+            </p>
+
+        </div>
+
+
+        <div class="upload-box">
+
+            <div class="big-icon">📁</div>
+
+            <h2>Select your study material</h2>
+
+            <p>
+                Supported formats: PDF, TXT, DOC, DOCX, Images
+            </p>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf,.txt,.doc,.docx,image/*"
+            >
+
+            <br>
+
+            <button onclick="uploadFile()">
+                Upload File
+            </button>
+
+            <p id="fileName"></p>
+
+        </div>
+
+
+        <div class="verification">
+
+            <h2>🛡️ Verified AI</h2>
+
+            <p>
+                After uploading, AI will use your study material
+                to generate answers and show the source.
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script type="module" src="upload.js"></script>
+</body>
+</html>

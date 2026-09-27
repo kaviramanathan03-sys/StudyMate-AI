@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Flashcards</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <h1>📚 StudyMate <span>AI</span></h1>
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="upload.html">📄 Upload Notes</a>
+
+            <a href="notes.html">📚 My Notes</a>
+
+            <a class="active"
+               href="flashcards.html">
+                🃏 Flashcards
+            </a>
+
+            <a href="quiz.html">✅ Quiz</a>
+
+            <a href="study-plan.html">📅 Study Plan</a>
+
+            <a href="offline.html">📱 Offline Mode</a>
+
+        </nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <a href="index.html">← Back to Home</a>
+
+        <h2>🃏 Flashcards</h2>
+
+        <div class="flashcard">
+
+            <p>QUESTION</p>
+
+            <h2 id="flashQuestion">
+                What is Cloud Computing?
+            </h2>
+
+            <hr>
+
+            <p id="flashAnswer">
+                Click "Show Answer"
+            </p>
+
+            <button onclick="showAnswer()">
+                Show Answer
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="flashcards.js"></script>
+
+</body>
+</html>
